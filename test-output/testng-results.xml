@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-31T20:42:57 IST" name="Default suite" finished-at="2022-12-31T20:45:37 IST" duration-ms="160470">
+  <suite started-at="2023-01-01T16:43:42 IST" name="Default suite" finished-at="2023-01-01T16:46:30 IST" duration-ms="168217">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-12-31T20:42:57 IST" name="Default test" finished-at="2022-12-31T20:45:37 IST" duration-ms="160470">
+    <test started-at="2023-01-01T16:43:42 IST" name="Default test" finished-at="2023-01-01T16:46:30 IST" duration-ms="168217">
       <class name="Runners.RunIT">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runners.RunIT@433defed]" started-at="2022-12-31T20:42:57 IST" name="setUpClass" finished-at="2022-12-31T20:42:59 IST" duration-ms="2406" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runners.RunIT@433defed]" started-at="2023-01-01T16:43:42 IST" name="setUpClass" finished-at="2023-01-01T16:43:44 IST" duration-ms="2428" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4b7a4c83]]>
+                <![CDATA[org.testng.TestRunner@688d2a5d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2022-12-31T20:42:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-31T20:44:16 IST" duration-ms="77009" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2023-01-01T16:43:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-01T16:43:51 IST" duration-ms="6527" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,18 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+at Steps.AppHooks.launchapp(AppHooks.java:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2022-12-31T20:44:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-31T20:44:32 IST" duration-ms="16372" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2023-01-01T16:43:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-01T16:43:53 IST" duration-ms="1794" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +58,18 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+at Steps.AppHooks.launchapp(AppHooks.java:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2022-12-31T20:44:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-31T20:44:57 IST" duration-ms="24883" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2023-01-01T16:43:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-01T16:44:04 IST" duration-ms="11217" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,10 +82,18 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+at Steps.AppHooks.launchapp(AppHooks.java:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2022-12-31T20:44:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-31T20:45:26 IST" duration-ms="28991" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunIT@433defed]" started-at="2023-01-01T16:44:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-01T16:46:19 IST" duration-ms="134690" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,10 +106,84 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: unknown error: DevToolsActivePort file doesn't exist
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'c50da356255d', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.296-222.539.amzn2.x86_64', java.version: '1.8.0_292'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x55bf99db78f3 <unknown>
+#1 0x55bf9989cba8 <unknown>
+#2 0x55bf998c2a72 <unknown>
+#3 0x55bf998bf036 <unknown>
+#4 0x55bf998bb9ef <unknown>
+#5 0x55bf998f5995 <unknown>
+#6 0x55bf998efd63 <unknown>
+#7 0x55bf998c6144 <unknown>
+#8 0x55bf998c7135 <unknown>
+#9 0x55bf99de6c3e <unknown>
+#10 0x55bf99dfc6b7 <unknown>
+#11 0x55bf99de7b95 <unknown>
+#12 0x55bf99dfdb05 <unknown>
+#13 0x55bf99ddc2ab <unknown>
+#14 0x55bf99e18248 <unknown>
+#15 0x55bf99e183c8 <unknown>
+#16 0x55bf99e3333d <unknown>
+#17 0x7fc99a912609 start_thread
+
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VIKRAM-PC', ip: '192.168.225.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: DevToolsActivePort file doesn't exist
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'c50da356255d', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.296-222.539.amzn2.x86_64', java.version: '1.8.0_292'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x55bf99db78f3 <unknown>
+#1 0x55bf9989cba8 <unknown>
+#2 0x55bf998c2a72 <unknown>
+#3 0x55bf998bf036 <unknown>
+#4 0x55bf998bb9ef <unknown>
+#5 0x55bf998f5995 <unknown>
+#6 0x55bf998efd63 <unknown>
+#7 0x55bf998c6144 <unknown>
+#8 0x55bf998c7135 <unknown>
+#9 0x55bf99de6c3e <unknown>
+#10 0x55bf99dfc6b7 <unknown>
+#11 0x55bf99de7b95 <unknown>
+#12 0x55bf99dfdb05 <unknown>
+#13 0x55bf99ddc2ab <unknown>
+#14 0x55bf99e18248 <unknown>
+#15 0x55bf99e183c8 <unknown>
+#16 0x55bf99e3333d <unknown>
+#17 0x7fc99a912609 start_thread
+
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VIKRAM-PC', ip: '192.168.225.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:30)
+at Steps.AppHooks.launchapp(AppHooks.java:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.RunIT@433defed]" started-at="2022-12-31T20:45:26 IST" name="tearDownClass" finished-at="2022-12-31T20:45:37 IST" duration-ms="10639" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.RunIT@433defed]" started-at="2023-01-01T16:46:19 IST" name="tearDownClass" finished-at="2023-01-01T16:46:30 IST" duration-ms="11381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

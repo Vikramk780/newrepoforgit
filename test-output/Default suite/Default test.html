@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 31 20:42:57 IST 2022</td>
+<td>Started on:</td><td>Sun Jan 01 16:43:42 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>160 seconds (160470 ms)</td>
+<tr><td>Total time:</td><td>168 seconds (168217 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,23 +77,123 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Runners.RunIT.runScenario()'><b>runScenario</b><br>Test class: Runners.RunIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Homepage", "homePage"</td>
-<td></td>
-<td>77</td>
-<td>Runners.RunIT@433defed</td></tr>
-<tr>
-<td title='Runners.RunIT.runScenario()'><b>runScenario</b><br>Test class: Runners.RunIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify TimePage", "TimePage"</td>
-<td></td>
-<td>28</td>
+<td><div><pre>java.lang.NullPointerException
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1601333072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1601333072'><pre>java.lang.NullPointerException
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div></td>
+<td>6</td>
 <td>Runners.RunIT@433defed</td></tr>
 <tr>
 <td title='Runners.RunIT.runScenario()'><b>runScenario</b><br>Test class: Runners.RunIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Recruitment", "verify recruitment page"</td>
-<td></td>
-<td>24</td>
+<td><div><pre>java.lang.NullPointerException
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace564424689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564424689'><pre>java.lang.NullPointerException
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div></td>
+<td>11</td>
+<td>Runners.RunIT@433defed</td></tr>
+<tr>
+<td title='Runners.RunIT.runScenario()'><b>runScenario</b><br>Test class: Runners.RunIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify TimePage", "TimePage"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;c50da356255d&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.14.296-222.539.amzn2.x86_64&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x55bf99db78f3 &lt;unknown&gt;
+#1 0x55bf9989cba8 &lt;unknown&gt;
+#2 0x55bf998c2a72 &lt;unknown&gt;
+#3 0x55bf998bf036 &lt;unknown&gt;
+#4 0x55bf998bb9ef &lt;unknown&gt;
+#5 0x55bf998f5995 &lt;unknown&gt;
+#6 0x55bf998efd63 &lt;unknown&gt;
+#7 0x55bf998c6144 &lt;unknown&gt;
+#8 0x55bf998c7135 &lt;unknown&gt;
+#9 0x55bf99de6c3e &lt;unknown&gt;
+#10 0x55bf99dfc6b7 &lt;unknown&gt;
+#11 0x55bf99de7b95 &lt;unknown&gt;
+#12 0x55bf99dfdb05 &lt;unknown&gt;
+#13 0x55bf99ddc2ab &lt;unknown&gt;
+#14 0x55bf99e18248 &lt;unknown&gt;
+#15 0x55bf99e183c8 &lt;unknown&gt;
+#16 0x55bf99e3333d &lt;unknown&gt;
+#17 0x7fc99a912609 start_thread
+
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;VIKRAM-PC&apos;, ip: &apos;192.168.225.195&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:30)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1828884696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1828884696'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;c50da356255d&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.14.296-222.539.amzn2.x86_64&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x55bf99db78f3 &lt;unknown&gt;
+#1 0x55bf9989cba8 &lt;unknown&gt;
+#2 0x55bf998c2a72 &lt;unknown&gt;
+#3 0x55bf998bf036 &lt;unknown&gt;
+#4 0x55bf998bb9ef &lt;unknown&gt;
+#5 0x55bf998f5995 &lt;unknown&gt;
+#6 0x55bf998efd63 &lt;unknown&gt;
+#7 0x55bf998c6144 &lt;unknown&gt;
+#8 0x55bf998c7135 &lt;unknown&gt;
+#9 0x55bf99de6c3e &lt;unknown&gt;
+#10 0x55bf99dfc6b7 &lt;unknown&gt;
+#11 0x55bf99de7b95 &lt;unknown&gt;
+#12 0x55bf99dfdb05 &lt;unknown&gt;
+#13 0x55bf99ddc2ab &lt;unknown&gt;
+#14 0x55bf99e18248 &lt;unknown&gt;
+#15 0x55bf99e183c8 &lt;unknown&gt;
+#16 0x55bf99e3333d &lt;unknown&gt;
+#17 0x7fc99a912609 start_thread
+
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;VIKRAM-PC&apos;, ip: &apos;192.168.225.195&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:30)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div></td>
+<td>134</td>
 <td>Runners.RunIT@433defed</td></tr>
 <tr>
 <td title='Runners.RunIT.runScenario()'><b>runScenario</b><br>Test class: Runners.RunIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user login verification", "Login Page"</td>
-<td></td>
-<td>16</td>
+<td><div><pre>java.lang.NullPointerException
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace114012533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace114012533'><pre>java.lang.NullPointerException
+	at qa.driverfactory.DriverFactory.init_driver(DriverFactory.java:43)
+	at Steps.AppHooks.launchapp(AppHooks.java:36)
+</pre></div></td>
+<td>1</td>
 <td>Runners.RunIT@433defed</td></tr>
 </table><p>
 </body>

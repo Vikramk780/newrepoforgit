@@ -2,14 +2,18 @@ package qa.pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+
+import io.reactivex.rxjava3.functions.Action;
 
 public class LoginPage {
 
@@ -44,6 +48,8 @@ public class LoginPage {
 		waitHelper.forThisElementWait(username, 10).sendKeys(uname);
 		waitHelper.forThisElementWait(password, 10).sendKeys(passwod);
 		waitHelper.forThisElementWait(loginbtn, 10).click();
+		
+		
 //		fluentlywait(username).sendKeys(uname);
 //		fluentlywait(password).sendKeys(passwod);
 //		fluentlywait(loginbtn).click();
